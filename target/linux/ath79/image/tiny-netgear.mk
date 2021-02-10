@@ -48,12 +48,11 @@ define Device/netgear_wnr2000-v3
   DEVICE_VARIANT := v3
   UIMAGE_MAGIC := 0x32303033
   NETGEAR_BOARD_ID := WNR2000V3
-  NETGEAR_HW_ID := 29763551+04+32
-  IMAGE_SIZE := 3712k
+  NETGEAR_HW_ID := 29763551+16+64
+  IMAGE_SIZE := 16000k
   IMAGES += factory-NA.img
   IMAGE/factory-NA.img := $$(IMAGE/default) | netgear-dni NA | \
 	check-size
   SUPPORTED_DEVICES += wnr2000-v3
-  DEFAULT := n
 endef
 TARGET_DEVICES += netgear_wnr2000-v3
