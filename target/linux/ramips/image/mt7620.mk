@@ -792,6 +792,16 @@ define Device/nexx_wt3020-8m
 endef
 TARGET_DEVICES += nexx_wt3020-8m
 
+define Device/phicomm_fir302m
+  SOC := mt7620n
+  IMAGE_SIZE := 16064k
+  IMAGES += factory.bin
+  DEVICE_VENDOR := Phicomm
+  DEVICE_MODEL := FIR302M
+  SUPPORTED_DEVICES += phicomm_fir302m
+endef
+TARGET_DEVICES += phicomm_fir302m
+
 define Device/ohyeah_oy-0001
   SOC := mt7620a
   IMAGE_SIZE := 16064k
