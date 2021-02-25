@@ -26,14 +26,29 @@
 			gpios = <&gpio2 4 GPIO_ACTIVE_LOW>;
 		};
 
-		lan {
-			label = "green:lan";
-			gpios = <&gpio1 15 GPIO_ACTIVE_LOW>;
+		lan1 {
+			label = "green:lan1";
+			gpios = <&gpio2 3 GPIO_ACTIVE_LOW>;
+		};
+
+		lan2 {
+			label = "green:lan2";
+			gpios = <&gpio2 2 GPIO_ACTIVE_LOW>;
+		};
+
+		lan3 {
+			label = "green:lan3";
+			gpios = <&gpio2 1 GPIO_ACTIVE_LOW>;
+		};
+
+		lan4 {
+			label = "green:lan4";
+			gpios = <&gpio2 0 GPIO_ACTIVE_LOW>;
 		};
 
 		led_power: power {
 			label = "green:power";
-			gpios = <&gpio2 3 GPIO_ACTIVE_LOW>;
+			gpios = <&gpio1 15 GPIO_ACTIVE_LOW>;
 		};
 
 		air {
@@ -47,7 +62,7 @@
 
 		reset {
 			label = "reset";
-			gpios = <&gpio0 17 GPIO_ACTIVE_LOW>;
+			gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
 			linux,code = <KEY_RESTART>;
 		};
 	};

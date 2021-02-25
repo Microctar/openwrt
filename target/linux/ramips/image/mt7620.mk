@@ -815,6 +815,7 @@ TARGET_DEVICES += ohyeah_oy-0001
 define Device/phicomm_k2g
   SOC := mt7620a
   IMAGE_SIZE := 7552k
+  IMAGES += factory.bin
   DEVICE_VENDOR := Phicomm
   DEVICE_MODEL := K2G
   DEVICE_PACKAGES := kmod-mt76x2
