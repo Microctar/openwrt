@@ -26,6 +26,11 @@
 			gpios = <&gpio2 4 GPIO_ACTIVE_LOW>;
 		};
 
+		wlan {
+			label = "green:wlan";
+			gpios = <&gpio3 0 GPIO_ACTIVE_LOW>;
+		};
+
 		lan1 {
 			label = "green:lan1";
 			gpios = <&gpio2 3 GPIO_ACTIVE_LOW>;
@@ -49,11 +54,6 @@
 		led_power: power {
 			label = "green:power";
 			gpios = <&gpio1 15 GPIO_ACTIVE_LOW>;
-		};
-
-		air {
-			label = "green:air";
-			gpios = <&gpio3 0 GPIO_ACTIVE_LOW>;
 		};
 	};
 

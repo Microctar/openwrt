@@ -380,6 +380,15 @@ define Device/elecom_wrh-300cr
 endef
 TARGET_DEVICES += elecom_wrh-300cr
 
+define Device/gaoke_q307r
+  SOC := mt7620n
+  IMAGE_SIZE := 16064k
+  DEVICE_VENDOR := Gaoke
+  DEVICE_MODEL := Q307R
+  SUPPORTED_DEVICES += gaoke_q307r
+endef
+TARGET_DEVICES += gaoke_q307r
+
 define Device/engenius_esr600
   SOC := mt7620a
   BLOCKSIZE := 64k
@@ -795,7 +804,6 @@ TARGET_DEVICES += nexx_wt3020-8m
 define Device/phicomm_fir302m
   SOC := mt7620n
   IMAGE_SIZE := 16064k
-  IMAGES += factory.bin
   DEVICE_VENDOR := Phicomm
   DEVICE_MODEL := FIR302M
   SUPPORTED_DEVICES += phicomm_fir302m
@@ -815,7 +823,6 @@ TARGET_DEVICES += ohyeah_oy-0001
 define Device/phicomm_k2g
   SOC := mt7620a
   IMAGE_SIZE := 7552k
-  IMAGES += factory.bin
   DEVICE_VENDOR := Phicomm
   DEVICE_MODEL := K2G
   DEVICE_PACKAGES := kmod-mt76x2
