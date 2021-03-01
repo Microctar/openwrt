@@ -782,7 +782,7 @@ define Device/tplink_tl-war302-v1
   DEVICE_VARIANT := v1
   SUPPORTED_DEVICES += tl-war302-v1
 endef
-TARGET_DEVICES += tplink_tl-wr842n-v3
+TARGET_DEVICES += tplink_tl-war302-v1
 
 define Device/tplink_tl-wr902ac-v1
   $(Device/tplink-safeloader)
