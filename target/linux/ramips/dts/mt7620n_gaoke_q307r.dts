@@ -4,7 +4,7 @@
 #include <dt-bindings/input/input.h>
 
 / {
-	compatible = "zyxel,keenetic-omni-ii", "ralink,mt7620n-soc";
+	compatible = "gaoke,q307r", "ralink,mt7620n-soc";
 	model = "Gaoke Q307R";
 
 	aliases {

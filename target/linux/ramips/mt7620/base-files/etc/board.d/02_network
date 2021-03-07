@@ -107,6 +107,10 @@ ramips_setup_interfaces()
 		ucidef_add_switch "switch0" \
 			"0:lan" "6@eth0"
 		;;
+	gaoke,q307r)
+		ucidef_add_switch "switch0" \
+			"1:lan:3" "2:lan:2" "3:lan:1" "0:wan" "6@eth0"
+		;;
 	dlink,dir-810l|\
 	netgear,jwnr2010-v5|\
 	phicomm,psg1218a|\
@@ -359,6 +363,9 @@ ramips_setup_macs()
 	zyxel,keenetic-omni|\
 	zyxel,keenetic-omni-ii|\
 	zyxel,keenetic-viva)
+		wan_mac=$(mtd_get_mac_binary factory 0x28)
+		;;
+	gaoke,q307r)
 		wan_mac=$(mtd_get_mac_binary factory 0x28)
 		;;
 	esac
